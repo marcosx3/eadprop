@@ -7,7 +7,7 @@ class Pessoa {
     private $cpf;
     private $cidade;
     private $estado;
-    private $status;
+    private $sts;
 
 
     /**
@@ -18,15 +18,15 @@ class Pessoa {
      * @param string $cpf
      * @param string $cidade
      * @param string $estado
-     * @param string $status
+     * @param string $sts
      */
-    public function __construct($nome, $dat_nsc, $cpf, $cidade, $estado, $status) {
+    public function __construct($nome, $dat_nsc, $cpf, $cidade, $estado, $sts) {
         $this->nome = $nome;
         $this->dat_nsc = $dat_nsc;
         $this->cpf = $cpf;
         $this->cidade = $cidade;
         $this->estado = $estado;
-        $this->status = $status;
+        $this->sts = $sts;
     }
 
     /**
@@ -77,10 +77,10 @@ class Pessoa {
     }
 
     public function getStatus() {
-        return $this->status;
+        return $this->sts;
     }
 
-    public function setStatus($status) {
-        $this->status = $status;
+    public function setStatus($sts) {
+        $this->sts = $sts;
     }
 }

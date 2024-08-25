@@ -34,4 +34,8 @@ class Categoria {
     public function getId() {
         return $this->id;
     }
+
+    public function setStatus($sts) {
+        $this->sts = $sts;
+    }
 } 
