@@ -8,4 +8,5 @@ class Empresa {
     private $endereco;
     private $cidade;
     private $bairro;
+    
 }
